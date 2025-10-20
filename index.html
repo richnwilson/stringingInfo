@@ -53,14 +53,14 @@
             'volkl': {
                 title: 'Volkl V-Cell 4',
                 type: 'Wilson NXT Comfort',
-                guage: '16G (1.30mm)',
+                gauge: '16G (1.30mm)',
                 tension: '55lbs (25kg)',
                 date: 'Oct 11th 2025'
             },
             'wilson': {
                 title: 'Wilson Federer Pro',
                 type: 'Wilson NXT Comfort',
-                guage: '16G (1.30mm)',
+                gauge: '16G (1.30mm)',
                 tension: '55lbs (25kg)',
                 date: 'Oct 19th 2025'
             }
@@ -78,12 +78,7 @@
                 cardElement.className = 'bg-gray-500 text-white rounded-xl p-6 md:p-8 shadow-lg';
                 return;
             }
-
-            // Update card background color based on selection
-            // We strip existing color classes before adding the new one
-            cardElement.className = cardElement.className.split(' ').filter(c => !c.startsWith('bg-')).join(' ');
-            cardElement.classList.add(data.color, 'transition-all', 'duration-300', 'ease-in-out', 'transform', 'hover:scale-[1.01]', 'hover:shadow-xl', 'text-white', 'rounded-xl', 'p-6', 'md:p-8');
-
+            
             // Construct the inner HTML
             cardElement.innerHTML = `
                 <div class="flex items-center space-x-4 mb-6 border-b border-white/30 pb-3">
